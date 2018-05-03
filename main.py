@@ -18,7 +18,7 @@ class Blog(db.Model):
     
     def __init__(self, title, body, owner):    #constructer 
         self.title = title
-        self.body = body
+        self.body = body 
         self.owner = owner
 
 class User(db.Model):
