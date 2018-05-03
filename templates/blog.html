@@ -8,11 +8,12 @@
     <p>No blogs yet</p>
     {% else %}
 
-    <ul>
+    <ul class="blog-list">
         {% for blog in blogs %}
         <li>
-            <a class="blog-title" href='/blog?id={{blog.id}}'><b>{{blog.title}}</b></a>
+            <a href='/blog?id={{blog.id}}'><strong>{{blog.title}}</strong></a>
             <p>{{blog.body}}</p>
+            <p class="post-author">Written by: <a href='/blog?user={{blog.owner_id}}'><strong>{{blog.owner.username}}</strong></a></p>
         </li>
         <hr />
         {% endfor %}

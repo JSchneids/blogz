@@ -2,20 +2,22 @@
 
 {% block content %}
 
-    <h1>Add a New Blog Post</h1>
+<div class="add-blog-wrap">
+    <h1>Add a Blog Entry</h1>
 
     <form method='post' action='/newpost'>
             <label>
-                <p>Title for new blog post:</p>
+                <p>Title for your new blog:</p>
                 <input type="text" name='blog-title' value="{{ request.form['blog-title'] }}" />
             </label>
             <span class="error">{{ title_error }}</span>
             <label>
-                <p>Post content:</p>
+                <p>Your new blog:</p>
                     <textarea name="blog-body">{{ request.form['blog-body'] }}</textarea>
             </label>
             <span class="error">{{ body_error }}</span>
-            <input class="submit" type="submit" value='Add Entry' />
+            <input class="submit" type="submit" value='Add Blog Entry' />
     </form>
+</div>
 
 {% endblock %}

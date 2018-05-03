@@ -1,0 +1,96 @@
+/* base.html styling */
+body {
+    font-family: sans-serif;
+    width: 50rem;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.nav {
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.nav-left, .nav-right {
+    display: inline;
+    width: 50%
+}
+
+.nav-left {
+    text-align: left;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+/* blog.html styling */
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-title {
+    font-size: 2rem
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1.25rem 0 0 .25rem;
+}
+
+/* blog_display.html */
+
+p {
+    margin-left: 0.5rem;
+}
+
+hr {
+    color: rgb(190, 189, 189);
+    opacity: 0.5;
+}
+
+/* newpost.html */
+textarea {
+    height: 10rem;
+    width: 20rem;
+}
+
+.submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: green;
+}
+
+
+.add-blog-wrap {
+    margin-left: 2rem;
+}
+.error {
+    font-style: italic;
+    color: red;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.success {
+    color: green;
+    margin-left: 2rem;
+}
+
+.post-author {
+    font-style: italic;
+    font-size: 12px;
+}
