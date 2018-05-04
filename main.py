@@ -7,7 +7,7 @@ app.config['DEBUG'] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://blogz:jakesblog@localhost:8889/blogz'
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
-app.secret_key = 'fdsgdsagsgadsf'   #randomly selected
+app.secret_key = 'zasdsagdsgadsf'   #randomly selected
 
 #creates blog table in database
 class Blog(db.Model): 

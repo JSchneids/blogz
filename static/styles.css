@@ -1,6 +1,6 @@
 /* base.html styling */
 body {
-    font-family: sans-serif;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
     width: 50rem;
     margin: 0 auto;
     padding: 10px;
@@ -94,3 +94,4 @@ textarea {
     font-style: italic;
     font-size: 12px;
 }
+
